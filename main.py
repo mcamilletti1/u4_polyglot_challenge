@@ -19,7 +19,8 @@
 
 #-----------------------------------------------
 # Solution Goes Here - >
-def add_list(list=[0]):
+def add_list(list=None):
+    list = [0] if list is None else list
     for num in list:
         if not isinstance(num, (int, float)):
             return "NaN"
